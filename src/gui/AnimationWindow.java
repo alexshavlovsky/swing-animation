@@ -39,7 +39,7 @@ public class AnimationWindow extends JFrame implements KeyListener {
         this.setResizable(false);
         this.setLocationRelativeTo(null);
         this.addKeyListener(this);
-        mainPanel.setBackground(new Color(192, 192, 192));
+        mainPanel.setBackground(new Color(64, 128, 192));
         this.add(mainPanel);
         this.setVisible(true);
 
@@ -73,7 +73,7 @@ public class AnimationWindow extends JFrame implements KeyListener {
             g2d.setTransform(save);
 
             if (showHeadsUpDisplay) {
-                g.setColor(Color.DARK_GRAY);
+                g.setColor(Color.ORANGE);
                 g.drawString("Time: " + String.format("%.1f", time), 15, 25);
                 g.drawString("Paused: " + animationPaused, 15, 40);
             }
